@@ -22,13 +22,18 @@ struct ImmersiveView: View {
             content.add(floor)
             
             if let diceModel = try? await Entity(named: "dice-2"),
-               let dice = diceModel.children.first?.children.first {
+               let dice = diceModel.children.first?.children.first,
+               let environment = try? await EnvironmentResource(named: "studio"){
                 dice.scale = [0.1,0.1,0.1]
                 dice.position.y = 0.5
                 dice.position.z = -1
                 
                 dice.generateCollisionShapes(recursive: false)
                 dice.components.set(InputTargetComponent())
+                
+                dice.components.set(ImageBasedLightComponent(source: .single(environment)))
+                dice.components.set(ImageBasedLightReceiverComponent(imageBasedLight: dice))
+                dice.components.set(GroundingShadowComponent(castsShadow: true))
                 
                 dice.components[PhysicsBodyComponent.self] = .init(PhysicsBodyComponent(
                     massProperties: .default,
