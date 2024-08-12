@@ -7,16 +7,22 @@
 
 import SwiftUI
 
+@Observable
+class DiceData {
+    var rolledNumber = 0
+}
+
 @main
 struct PlayDominoApp: App {
+    @State var diceData = DiceData()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(diceData: DiceData())
         }
         .defaultSize(width: 100, height: 100)
 
         ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
+            ImmersiveView(diceData: DiceData())
         }
     }
 }
