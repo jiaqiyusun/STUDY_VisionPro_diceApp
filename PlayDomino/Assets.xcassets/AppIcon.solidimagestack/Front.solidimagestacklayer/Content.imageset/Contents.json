@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "apple_resized.png",
       "idiom" : "vision",
       "scale" : "2x"
     }

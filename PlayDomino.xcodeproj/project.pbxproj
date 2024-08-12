@@ -13,6 +13,8 @@
 		B51058B82C651AFB001D8091 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51058B72C651AFB001D8091 /* ImmersiveView.swift */; };
 		B51058BA2C651AFD001D8091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51058B92C651AFD001D8091 /* Assets.xcassets */; };
 		B51058BD2C651AFD001D8091 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51058BC2C651AFD001D8091 /* Preview Assets.xcassets */; };
+		B5CA6C0E2C662E1E000350B3 /* dice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B5CA6C0D2C662E1E000350B3 /* dice.usdz */; };
+		B5CA6C102C664C8A000350B3 /* dice-2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B5CA6C0F2C664C8A000350B3 /* dice-2.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B51058B92C651AFD001D8091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51058BC2C651AFD001D8091 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B51058BE2C651AFD001D8091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5CA6C0D2C662E1E000350B3 /* dice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = dice.usdz; path = ../../../../Downloads/dice.usdz; sourceTree = "<group>"; };
+		B5CA6C0F2C664C8A000350B3 /* dice-2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = "dice-2.usdz"; path = "../../../../Downloads/dice-2.usdz"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				B51058B52C651AFB001D8091 /* ContentView.swift */,
 				B51058B72C651AFB001D8091 /* ImmersiveView.swift */,
 				B51058B92C651AFD001D8091 /* Assets.xcassets */,
+				B5CA6C0F2C664C8A000350B3 /* dice-2.usdz */,
+				B5CA6C0D2C662E1E000350B3 /* dice.usdz */,
 				B51058BE2C651AFD001D8091 /* Info.plist */,
 				B51058BB2C651AFD001D8091 /* Preview Content */,
 			);
@@ -146,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B51058BD2C651AFD001D8091 /* Preview Assets.xcassets in Resources */,
+				B5CA6C0E2C662E1E000350B3 /* dice.usdz in Resources */,
 				B51058BA2C651AFD001D8091 /* Assets.xcassets in Resources */,
+				B5CA6C102C664C8A000350B3 /* dice-2.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
